@@ -15,3 +15,11 @@ a = array.pop();
 let mixedArray: [number, boolean];
 
 mixedArray = [1, true];
+
+function add(a: number, b: number, c?: number, d: number = 0) {
+  return a + b;
+}
+
+let sum = add(2, 2, 3);
+
+console.log(sum);
