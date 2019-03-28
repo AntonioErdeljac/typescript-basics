@@ -23,3 +23,7 @@ function add(a: number, b: number, c?: number, d: number = 0) {
 let sum = add(2, 2, 3);
 
 console.log(sum);
+
+function greet(): string {
+  return "Hello world";
+}
