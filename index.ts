@@ -27,3 +27,14 @@ console.log(sum);
 function greet(): string {
   return "Hello world";
 }
+
+let anyType: any;
+
+anyType = true;
+anyType = "hello";
+anyType = 2;
+
+let unionType: number | boolean;
+
+unionType = true;
+unionType = 2;
