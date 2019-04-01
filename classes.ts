@@ -2,6 +2,10 @@ class Person {
   firstName: string;
   lastName: string;
 
+  greet() {
+    console.log("Hey");
+  }
+
   constructor(firstName: string, lastName: string) {
     this.firstName = firstName;
     this.lastName = lastName;
