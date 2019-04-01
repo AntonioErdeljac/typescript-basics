@@ -22,3 +22,23 @@ person.firstName = "Test";
 person.lastName = "Test2";
 
 person.getFullName();
+
+class Progammer extends Person {
+  position: string;
+
+  greet() {
+    console.log('hayiii');
+  }
+
+  newGreet() {
+    super.greet();
+  }
+
+  constructor(position: string) {
+    super("Antonio", "Erdeljac");
+
+    this.position = position;
+  }
+}
+
+let progammer: Person = new Progammer("Fullstack web developer");
