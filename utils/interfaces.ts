@@ -10,9 +10,14 @@ class Foo implements Person2 {
   getFullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 }
 
-let aPerson: Person2 = new Foo();
+let aPerson: Person2 = new Foo("a", "b");
 
 let someObj = {
   firstName: "Test",
